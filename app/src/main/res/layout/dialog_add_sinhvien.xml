@@ -23,6 +23,8 @@
         android:id="@+id/edtMaSV"
         android:hint="Mã SV"
         android:textSize="18dp"
+        android:padding="10dp"
+        android:background="@drawable/input"
         android:textStyle="bold"
         android:layout_marginVertical="12dp"
         android:textColor="@color/black"/>
@@ -33,6 +35,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/edtNameSV"
         android:hint="Tên SV"
+        android:padding="10dp"
+        android:background="@drawable/input"
         android:textSize="18dp"
         android:textStyle="bold"
         android:layout_marginVertical="12dp"
@@ -46,6 +50,8 @@
         android:hint="Điểm trung bình"
         android:textSize="18dp"
         android:textStyle="bold"
+        android:padding="10dp"
+        android:background="@drawable/input"
         android:layout_marginBottom="12dp"
         android:textColor="@color/black"/>
 
@@ -56,6 +62,8 @@
         android:hint="Link ảnh"
         android:textSize="18dp"
         android:textStyle="bold"
+        android:padding="10dp"
+        android:background="@drawable/input"
         android:layout_marginBottom="12dp"
         android:textColor="@color/black"/>
 
@@ -78,7 +86,7 @@
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:background="@drawable/btn"
-            android:backgroundTint="#B39743"
+            android:backgroundTint="#43B3B3"
             android:layout_marginRight="20dp"
             android:textColor="@color/white"
             android:text="Chọn ảnh"/>
@@ -87,7 +95,7 @@
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:background="@drawable/btn"
-            android:backgroundTint="#2196F3"
+            android:backgroundTint="#4FA2E4"
             android:layout_marginLeft="20dp"
             android:textColor="@color/white"
             android:text="Save"/>

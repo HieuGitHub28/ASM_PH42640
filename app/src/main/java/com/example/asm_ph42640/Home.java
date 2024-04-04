@@ -147,35 +147,6 @@ public class Home extends AppCompatActivity {
                             }
                         });
 
-
-//                        RequestBody rMasv = RequestBody.create(MediaType.parse("multipart/form-data"), masv);
-//                        RequestBody rName = RequestBody.create(MediaType.parse("multipart/form-data"), name);
-//                        RequestBody rPoint = RequestBody.create(MediaType.parse("multipart/form-data"), diemTB);
-//
-//                        String strRealPart = RealPathUtil.getRealPath(Home.this,mUri);
-//                        Log.e("a", strRealPart);
-//                        edtAvatar.setText(strRealPart);
-//                        File file = new File(strRealPart);
-//                        RequestBody requestBodyAvatar = RequestBody.create(MediaType.parse("multipart/form-data"), file);
-//                        MultipartBody.Part multiAvatar = MultipartBody.Part.createFormData("avatar", file.getName(),requestBodyAvatar);
-//
-//                        ApiService.apiService.addStudentPicker(rMasv,rName,rPoint,multiAvatar).enqueue(new Callback<SinhVien>() {
-//                            @Override
-//                            public void onResponse(Call<SinhVien> call, Response<SinhVien> response) {
-//                                if (response.isSuccessful()){
-//                                    Toast.makeText(Home.this, "Add success", Toast.LENGTH_SHORT).show();
-//                                    loadData();
-//                                    dialog.dismiss();
-//                                }
-//                            }
-//
-//                            @Override
-//                            public void onFailure(Call<SinhVien> call, Throwable t) {
-//                                Toast.makeText(Home.this, "Add fail", Toast.LENGTH_SHORT).show();
-//                                dialog.dismiss();
-//                            }
-//                        });
-
                     }
                 }
             }
@@ -276,7 +247,6 @@ public class Home extends AppCompatActivity {
                     }
                 }
             });
-
 
     public void openImagePicker(){
             Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);

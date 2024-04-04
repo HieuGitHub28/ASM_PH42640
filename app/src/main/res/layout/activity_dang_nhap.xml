@@ -7,88 +7,114 @@
     android:orientation="vertical"
     android:gravity="center_vertical"
     android:padding="20dp"
+    android:background="#88AFAC"
     tools:context=".DangNhap">
 
     <ImageView
-        android:layout_width="300dp"
+        android:layout_width="260dp"
         android:layout_height="100dp"
-        android:src="@drawable/logo"
-        android:layout_gravity="center"
-        />
+        android:src="@drawable/anh1"
+        android:scaleType="fitXY"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="20dp"/>
 
-    <EditText
-        android:id="@+id/txtuser"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:hint="Nhập username"
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        android:background="@drawable/trongsuot"
-        android:padding="14dp"
-        android:layout_marginTop="50dp"
-        />
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtuser"
+            android:hint="Nhập Email"
+            android:background="@drawable/input"
+            android:paddingStart="12dp"
+            android:layout_margin="14dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/txtpass"
-        android:layout_marginTop="10dp"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:hint="Nhập password"
-        android:inputType="textPassword"
-        android:background="@drawable/trongsuot"
-        android:padding="14dp"
-        android:layout_marginBottom="10dp"
-        android:textSize="15dp"
-        />
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtpass"
+            android:hint="Nhập PassWord"
+            android:background="@drawable/input"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:layout_margin="14dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/btndangnhap"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/dangnhap"
-        android:backgroundTint="#63B1EF"
-        android:text="ĐĂNG NHẬP"
+        android:text="Login"
         android:textColor="@color/white"
+        android:textSize="17sp"
         android:textStyle="bold"
-        android:textSize="21dp"
-        android:layout_marginTop="20dp"
-        />
-
-    <TextView
-        android:id="@+id/btndangnhapPhone"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Đăng nhập bằng số điện thoại."
-        android:textColor="@color/black"
-        android:gravity="center"
-        android:textSize="18dp"/>
-    <View
-        android:layout_width="245dp"
-        android:layout_height="1dp"
-        android:layout_gravity="center"
-        android:background="@android:color/black" />
+        android:background="@drawable/input"
+        android:backgroundTint="#E81A60"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginVertical="18dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:gravity="center">
-        <TextView
-            android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bạn chưa có tài khoản?"
-            android:textSize="18dp"/>
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot password?"
+                android:textColor="@color/white"
+                android:layout_marginBottom="12dp"/>
+            <TextView
+                android:id="@+id/txtForgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Reset pass"
+                android:textStyle="bold|italic"
+                android:textSize="17sp"
+                android:textColor="#3F51B5"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"
+                android:textColor="@color/white" />
+            <TextView
+                android:id="@+id/btndangky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Sign Up"
+                android:textStyle="bold|italic"
+                android:textSize="17sp"
+                android:textColor="#E91E63"/>
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/btndangky"
+            android:id="@+id/btndangnhapPhone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:text="Đăng ký."
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:textColor="#E53935"/>
+            android:text="Login with phone number"
+            android:textStyle="bold|italic"
+            android:textSize="17sp"
+            android:textColor="#673AB7"/>
+
     </LinearLayout>
 
 

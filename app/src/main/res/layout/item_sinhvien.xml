@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_margin="10dp"
-    android:background="@drawable/item"
+    android:background="@drawable/btn"
     android:padding="15dp">
 
     <LinearLayout
@@ -51,8 +51,8 @@
         <ImageView
             android:id="@+id/imgAvatar"
             android:scaleType="fitXY"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
             android:src="@drawable/common_full_open_on_phone"/>
     </LinearLayout>
 
@@ -66,16 +66,13 @@
             android:id="@+id/btnUpdate"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/btn"
-            android:backgroundTint="#5BCAFB"
             android:layout_marginRight="20dp"
             android:src="@drawable/update"/>
         <ImageButton
             android:id="@+id/btnDelete"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/btn"
-            android:backgroundTint="#F80101"
+
             android:layout_marginLeft="20dp"
             android:src="@drawable/delete"/>
     </LinearLayout>

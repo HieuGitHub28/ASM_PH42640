@@ -19,9 +19,7 @@ import retrofit2.http.Part;
 import retrofit2.http.Path;
 
 public interface ApiService {
-
-    String DOMAIN = "http://192.168.1.19:3000/api/";
-
+    String DOMAIN = "http://192.168.207.51:3000/api/";
     ApiService apiService  = new Retrofit.Builder()
             .baseUrl(ApiService.DOMAIN)
             .addConverterFactory(GsonConverterFactory.create())

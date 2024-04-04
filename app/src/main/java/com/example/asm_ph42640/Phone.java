@@ -38,7 +38,7 @@ public class Phone extends AppCompatActivity {
 
         EditText edtPhone = findViewById(R.id.edtphone);
         EditText edtOTP = findViewById(R.id.edtOTP);
-        Button btnGetOTP = findViewById(R.id.btnGetOPT);
+        Button btnGetOTP = findViewById(R.id.btnGetOTP);
         Button btnLogin = findViewById(R.id.btnLogin);
 
         mAuth = FirebaseAuth.getInstance();
@@ -99,7 +99,7 @@ public class Phone extends AppCompatActivity {
                         if (task.isSuccessful()){
                             Toast.makeText(Phone.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
                             FirebaseUser user = task.getResult().getUser();
-                            startActivity(new Intent(Phone.this, Logout.class));
+                            startActivity(new Intent(Phone.this, Home.class));
                         }else{
                             Log.d(TAG, "signInWithCredential: failure", task.getException());
                             Toast.makeText(Phone.this, "Đăng nhập thất bại", Toast.LENGTH_SHORT).show();

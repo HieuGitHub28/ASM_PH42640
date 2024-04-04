@@ -5,7 +5,6 @@ public class SinhVien {
 
     private String masv;
     private String name;
-
     private Double point;
     private String avatar;
 
